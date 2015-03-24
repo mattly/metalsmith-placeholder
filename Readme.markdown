@@ -1,5 +1,7 @@
 # metalsmith-placeholder
 
+<img src="https://travis-ci.org/mattly/metalsmith-placeholder.svg" data-bindattr-818="818" title="Build Status Images">
+
 A metalsmith plugin to allow stub metadata files, such as `index.html.yaml`.
 
 ## Usage
