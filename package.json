@@ -1,10 +1,10 @@
 {
   "name": "metalsmith-placeholder",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Turns yaml/json metadata files into empty files",
   "main": "index.js",
   "scripts": {
-    "prepublish": "./node_modules/.bin/babel-node src/placeholder.es6 --out-file index.js",
+    "prepublish": "./node_modules/.bin/babel src/placeholder.es6 --out-file index.js",
     "test": "./node_modules/.bin/babel-node test/placeholder_test.es6"
   },
   "author": "Matthew Lyon",
@@ -14,7 +14,7 @@
     "js-yaml": "^3.2.7"
   },
   "devDependencies": {
-    "babel": "^4.7.16",
+    "babel": "^5.1.10",
     "metalsmith": "^1.3.0",
     "tap": "^0.7.1"
   }
