@@ -12,10 +12,10 @@ export default function(config) {
         , metadata
       ;
       try {
-        if (extName.match(/\.yaml?/)) {
+        if (extName.match(/\.ya?ml$/)) {
           metadata = yaml.safeLoad( page.contents.toString() );
-        } else if (extName == 'json') {
-          metadata = JSON.stringify(page.contents.toString());
+        } else if (extName == '.json') {
+          metadata = JSON.parse(page.contents.toString());
         }
       }
       catch(e) { done(e); }
